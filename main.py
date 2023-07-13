@@ -1,5 +1,10 @@
 print("КАЛЬКУЛЯТОР".center(30))
 
+
+def func():
+    pass
+
+
 while True:
     try:
         a, b = tuple(map(int, input("Введіть два числа через пропуск: ").split(' ')))
