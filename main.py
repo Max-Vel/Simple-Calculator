@@ -53,5 +53,8 @@ while True:
         break
     elif user_choice == '10':
         print(get_even_numbers(a, b))
+
     elif user_choice == '12':
         print(get_remainder_of_division(a, b))
+
+
