@@ -42,3 +42,6 @@ while True:
         break
     elif user_choice == '10':
         print(get_even_numbers(a, b))
+
+    else:
+        print('Не коректне введення.\n')
