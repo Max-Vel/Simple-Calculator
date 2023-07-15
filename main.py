@@ -12,6 +12,7 @@ def get_even_numbers(a, b):
             even_numbers.append(num)
     return even_numbers
 
+
 def get_remainder_of_division(a, b):
     try:
         a % b
