@@ -5,6 +5,14 @@ def func():
     pass
 
 
+def get_even_numbers(a, b):
+    even_numbers = []
+    for num in range(a, b + 1):
+        if num % 2 == 0:
+            even_numbers.append(num)
+    return even_numbers
+
+
 while True:
     try:
         a, b = tuple(map(int, input("Введіть два числа через пропуск: ").split(' ')))
@@ -32,3 +40,5 @@ while True:
 
     if user_choice == '0':
         break
+    elif user_choice == '10':
+        print(get_even_numbers(a, b))
