@@ -12,11 +12,17 @@ def get_even_numbers(a, b):
             even_numbers.append(num)
     return even_numbers
 
-def remainder_of_division(a, b):
-    if a < b:
-        return f"Залишок від ділення {a} на {b} складає {a}"
+def get_remainder_of_division(a, b):
+    try:
+        a % b
+    except ZeroDivisionError:
+        return "Не можна ділити на ноль, навіть при діленні із залишком!!!\n"
     else:
-        return f"Залишок від ділення {a} на {b} складає {a%b}"
+        if a < b:
+            return f"Залишок від ділення {a} на {b} складає {a}\n"
+        else:
+            return f"Залишок від ділення {a} на {b} складає {a%b}\n"
+
 
 while True:
     try:
@@ -48,4 +54,4 @@ while True:
     elif user_choice == '10':
         print(get_even_numbers(a, b))
     elif user_choice == '12':
-        print(remainder_of_division(a, b))
+        print(get_remainder_of_division(a, b))
