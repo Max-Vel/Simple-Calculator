@@ -12,6 +12,8 @@ def get_even_numbers(a, b):
             even_numbers.append(num)
     return even_numbers
 
+def remainder_of_division():
+    pass
 
 while True:
     try:
