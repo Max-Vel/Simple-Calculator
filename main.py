@@ -14,6 +14,11 @@ def get_retail_squares(a, b):
         return f'Різниця квадратів чисел {a} та {b} складає {n}'
 
 
+def get_squares_of_sum(a, b):
+    squares_of_sum = (a + b) ** 2
+    return f'Квадрат суми чисел {a} та {b} становить {squares_of_sum}.'
+
+
 def get_even_numbers(a, b):
     even_numbers = []
     for num in range(a, b + 1):
@@ -63,6 +68,8 @@ while True:
         break
     elif user_choice == '7':
         print(get_retail_squares(a, b))
+    elif user_choice == '8':
+        print(get_squares_of_sum(a, b))
     elif user_choice == '10':
         print(get_even_numbers(a, b))
     elif user_choice == '12':
