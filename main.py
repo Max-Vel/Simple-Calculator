@@ -5,6 +5,15 @@ def func():
     pass
 
 
+def get_retail_squares(a, b):
+    if a < b:
+        n = b**2 - a**2
+        return f'Різниця квадратів чисел {b} та {a} складає {n}'
+    else:
+        n = a ** 2 - b ** 2
+        return f'Різниця квадратів чисел {a} та {b} складає {n}'
+
+
 def get_even_numbers(a, b):
     even_numbers = []
     for num in range(a, b + 1):
@@ -52,6 +61,8 @@ while True:
 
     if user_choice == '0':
         break
+    elif user_choice == '7':
+        print(get_retail_squares(a, b))
     elif user_choice == '10':
         print(get_even_numbers(a, b))
     elif user_choice == '12':
