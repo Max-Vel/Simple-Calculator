@@ -1,8 +1,8 @@
 print("КАЛЬКУЛЯТОР".center(30))
 
 
-def get_add(a_number, b_number):
-    return f' Додавання   {a} + {b} дає результат  {a_number + b_number}'
+def get_add(a, b):
+    return f' Додавання   {a} + {b} дає результат  {a + b}'
 
 
 def get_retail_squares(a, b):
@@ -50,8 +50,7 @@ while True:
     except:
         print('Некоректне введення.')
         continue
-    else:
-        pass
+
 
     print(f"""
   Оберіть дію для чисел {a} та {b}:
@@ -74,10 +73,8 @@ while True:
 
     if user_choice == '0':
         break
-
     elif user_choice == '1':
         print(get_add(a, b))
-
     elif user_choice == '5':
         print(get_exponentiate(a, b))
     elif user_choice == '7':
@@ -88,6 +85,3 @@ while True:
         print(get_even_numbers(a, b))
     elif user_choice == '12':
         print(get_remainder_of_division(a, b))
-
-
-
