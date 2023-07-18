@@ -2,7 +2,46 @@ print("КАЛЬКУЛЯТОР".center(30))
 
 
 def get_add(a_number, b_number):
-    return a_number + b_number
+    return f' Додавання   {a} + {b} дає результат  {a_number + b_number}'
+
+
+def get_retail_squares(a, b):
+    if a < b:
+        n = b**2 - a**2
+        return f'Різниця квадратів чисел {b} та {a} складає {n}'
+    else:
+        n = a ** 2 - b ** 2
+        return f'Різниця квадратів чисел {a} та {b} складає {n}'
+
+
+def get_squares_of_sum(a, b):
+    squares_of_sum = (a + b) ** 2
+    return f'Квадрат суми чисел {a} та {b} становить {squares_of_sum}.'
+
+
+def get_even_numbers(a, b):
+    even_numbers = []
+    for num in range(a, b + 1):
+        if num % 2 == 0:
+            even_numbers.append(num)
+    return even_numbers
+
+
+def get_remainder_of_division(a, b):
+    try:
+        a % b
+    except ZeroDivisionError:
+        return "Не можна ділити на ноль, навіть при діленні із залишком!!!\n"
+    else:
+        if a < b:
+            return f"Залишок від ділення {a} на {b} складає {a}\n"
+        else:
+            return f"Залишок від ділення {a} на {b} складає {a%b}\n"
+
+
+def get_exponentiate(a, b):
+    c = a ** b
+    return f'Піднесення числа {a} до степеня числа {b} дорівнює {c}.'
 
 
 while True:
@@ -35,5 +74,20 @@ while True:
 
     if user_choice == '0':
         break
+
     elif user_choice == '1':
         print(get_add(a, b))
+
+    elif user_choice == '5':
+        print(get_exponentiate(a, b))
+    elif user_choice == '7':
+        print(get_retail_squares(a, b))
+    elif user_choice == '8':
+        print(get_squares_of_sum(a, b))
+    elif user_choice == '10':
+        print(get_even_numbers(a, b))
+    elif user_choice == '12':
+        print(get_remainder_of_division(a, b))
+
+
+
