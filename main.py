@@ -7,6 +7,25 @@ print('*' * 30)
 
 =======
 >>>>>>> 1cd7d8d3eda00018a38d56df0e6f33e8a2405f26
+
+
+def get_math_func(a, b):
+    if a > b:
+        ran = list(range(b + 1, a))
+    elif a < b:
+        ran = list(range(a + 1, b))
+    else:
+        print(f'\n{a} = {b}')
+        return
+
+    num = [str(i) for i in ran if i % 2 == 0]
+    new_num = ",".join(num)
+    if '0' in new_num:
+        new_num = new_num.replace(',0', '')
+    print(f'\nThe range is: {ran}.')
+    print(f'Answer is: {new_num}.')
+
+
 def get_add(a, b):
     return f' Додавання   {a} + {b} дає результат  {a + b}'
 
@@ -89,6 +108,8 @@ while True:
         print(get_squares_of_sum(a, b))
     elif user_choice == '10':
         print(get_even_numbers(a, b))
+    elif user_choice == '11':
+        get_math_func(a, b)
     elif user_choice == '12':
 <<<<<<< HEAD
         print(get_remainder_of_division(a, b))
