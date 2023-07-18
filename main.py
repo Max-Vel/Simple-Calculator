@@ -39,6 +39,11 @@ def get_remainder_of_division(a, b):
             return f"Залишок від ділення {a} на {b} складає {a%b}\n"
 
 
+def get_exponentiate(a, b):
+    c = a ** b
+    return f'Піднесення числа {a} до степеня числа {b} дорівнює {c}.'
+
+
 while True:
     try:
         a, b = tuple(map(int, input("Введіть два числа через пропуск: ").split(' ')))
@@ -66,6 +71,8 @@ while True:
 
     if user_choice == '0':
         break
+    elif user_choice == '5':
+        print(get_exponentiate(a, b))
     elif user_choice == '7':
         print(get_retail_squares(a, b))
     elif user_choice == '8':
