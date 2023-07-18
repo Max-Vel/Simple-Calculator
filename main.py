@@ -1,6 +1,7 @@
 print("КАЛЬКУЛЯТОР".center(30))
 
 
+
 def get_add(a_number, b_number):
     return f' Додавання   {a} + {b} дає результат  {a_number + b_number}'
 
