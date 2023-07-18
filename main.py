@@ -1,4 +1,6 @@
+print('*' * 30)
 print("КАЛЬКУЛЯТОР".center(30))
+print('*' * 30)
 
 
 def get_add(a, b):
