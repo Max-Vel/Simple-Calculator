@@ -1,8 +1,8 @@
 print("КАЛЬКУЛЯТОР".center(30))
 
 
-def func():
-    pass
+def get_add(a_number, b_number):
+    return a_number + b_number
 
 
 while True:
@@ -11,6 +11,9 @@ while True:
     except:
         print('Некоректне введення.')
         continue
+    else:
+        pass
+
     print(f"""
   Оберіть дію для чисел {a} та {b}:
       0. Вихід
@@ -32,3 +35,5 @@ while True:
 
     if user_choice == '0':
         break
+    elif user_choice == '1':
+        print(get_add(a, b))
