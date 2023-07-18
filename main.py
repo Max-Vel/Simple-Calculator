@@ -3,7 +3,10 @@ print("КАЛЬКУЛЯТОР".center(30))
 print('*' * 30)
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1cd7d8d3eda00018a38d56df0e6f33e8a2405f26
 def get_add(a, b):
     return f' Додавання   {a} + {b} дає результат  {a + b}'
 
@@ -53,8 +56,7 @@ while True:
     except:
         print('Некоректне введення.')
         continue
-    else:
-        pass
+
 
     print(f"""
   Оберіть дію для чисел {a} та {b}:
@@ -88,4 +90,8 @@ while True:
     elif user_choice == '10':
         print(get_even_numbers(a, b))
     elif user_choice == '12':
+<<<<<<< HEAD
         print(get_remainder_of_division(a, b))
+=======
+        print(get_remainder_of_division(a, b))
+>>>>>>> 1cd7d8d3eda00018a38d56df0e6f33e8a2405f26
