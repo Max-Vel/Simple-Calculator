@@ -3,12 +3,6 @@ print("КАЛЬКУЛЯТОР".center(30))
 print('*' * 30)
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 1cd7d8d3eda00018a38d56df0e6f33e8a2405f26
-
-
 def get_math_func(a, b):
     if a > b:
         ran = list(range(b + 1, a))
@@ -111,8 +105,5 @@ while True:
     elif user_choice == '11':
         get_math_func(a, b)
     elif user_choice == '12':
-<<<<<<< HEAD
         print(get_remainder_of_division(a, b))
-=======
-        print(get_remainder_of_division(a, b))
->>>>>>> 1cd7d8d3eda00018a38d56df0e6f33e8a2405f26
+
