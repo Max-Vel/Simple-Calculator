@@ -2,6 +2,9 @@ print('*' * 30)
 print("КАЛЬКУЛЯТОР".center(30))
 print('*' * 30)
 
+def sum_of_squares(a, b):
+    return a**2+b**2
+
 
 def get_math_func(a, b):
     if a > b:
@@ -96,6 +99,8 @@ while True:
         print(get_add(a, b))
     elif user_choice == '5':
         print(get_exponentiate(a, b))
+    elif user_choice == '6':
+        print(sum_of_squares(a, b))
     elif user_choice == '7':
         print(get_retail_squares(a, b))
     elif user_choice == '8':
