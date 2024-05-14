@@ -1,3 +1,5 @@
+#Maxim
+
 print(' КАЛЬКУЛЯТОР '.center(40, '*'))
 
 while True:
