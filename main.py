@@ -1,4 +1,10 @@
-#Maxim
+def division(a, b):
+    try:
+        answer = a / b
+    except ZeroDivisionError:
+        print('Ділити на нуль не можна')
+    else:
+        print(f'Результат ділення: {round(answer, 2)}')
 
 print(' КАЛЬКУЛЯТОР '.center(40, '*'))
 
@@ -28,3 +34,11 @@ while True:
 
     if user_choice == '0':
         break
+    if user_choice == '4':
+        division(a, b)
+        choice = input('Бажаєте продовжити? (y/n)')
+        if choice == 'y':
+            continue
+        else:
+            print('Допобачення')
+            break
