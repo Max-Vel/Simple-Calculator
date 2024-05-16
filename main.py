@@ -6,6 +6,8 @@ def division(a, b):
     else:
         print(f'Результат ділення: {round(answer, 2)}')
 
+def difference_of_squares(a, b):
+    print(a ** 2 - b ** 2)
 
 def square_of_sum(a, b):
     print((a + b) ** 2)
@@ -58,6 +60,15 @@ while True:
         else:
             print('До побачення')
             break
+    if user_choice == '7':
+        difference_of_squares(a, b)
+        choice = input('Бажаєте продовжити? (y/n) ')
+        if choice == 'y':
+            continue
+        else:
+            print('До побачення')
+            break
+
     elif user_choice == '8':
         square_of_sum(a, b)
         choice = input('Бажаєте продовжити? (y/n) ')
