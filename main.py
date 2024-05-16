@@ -11,6 +11,10 @@ def square_of_sum(a, b):
     print((a + b) ** 2)
 
 
+def odd_range(a, b):
+    print([i for i in range(a, b+1) if i % 2 != 0])
+
+
 print(' КАЛЬКУЛЯТОР '.center(40, '*'))
 
 while True:
@@ -48,6 +52,14 @@ while True:
             break
     elif user_choice == '8':
         square_of_sum(a, b)
+        choice = input('Бажаєте продовжити? (y/n) ')
+        if choice == 'y':
+            continue
+        else:
+            print('До побачення')
+            break
+    elif user_choice == '11':
+        odd_range(a, b)
         choice = input('Бажаєте продовжити? (y/n) ')
         if choice == 'y':
             continue
