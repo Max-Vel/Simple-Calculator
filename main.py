@@ -9,6 +9,8 @@ def division(a, b):
     else:
         print(f'Результат ділення: {round(answer, 2)}')
 
+def difference_of_squares(a, b):
+    print(a ** 2 - b ** 2)
 
 def square_of_sum(a, b):
     print((a + b) ** 2)
@@ -20,6 +22,10 @@ def paired_num(a, b):
 
 def odd_range(a, b):
     print([i for i in range(a, b+1) if i % 2 != 0])
+
+def sum_of_squares(a, b):
+    res = a ** 2 + b ** 2
+    print(f'Сума квадратів чисел {a} та {b} дорівнює {res}.')
 
 
 print(' КАЛЬКУЛЯТОР '.center(40, '*'))
@@ -59,6 +65,8 @@ while True:
             break
     elif user_choice == '5':
         power(a, b)
+    if user_choice == '7':
+        difference_of_squares(a, b)
         choice = input('Бажаєте продовжити? (y/n) ')
         if choice == 'y':
             continue
@@ -84,6 +92,14 @@ while True:
     elif user_choice == '11':
         odd_range(a, b)
         choice = input('Бажаєте продовжити? (y/n) ')
+        if choice == 'y':
+            continue
+        else:
+            print('До побачення')
+            break
+    elif user_choice == '6':
+        sum_of_squares(a, b)
+        choice = input('Бажаєте продовжити? (y/n)')
         if choice == 'y':
             continue
         else:
