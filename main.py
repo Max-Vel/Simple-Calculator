@@ -1,3 +1,6 @@
+def power(a, b):
+    print(a ** b)
+
 def division(a, b):
     try:
         answer = a / b
@@ -48,6 +51,14 @@ while True:
         break
     elif user_choice == '4':
         division(a, b)
+        choice = input('Бажаєте продовжити? (y/n) ')
+        if choice == 'y':
+            continue
+        else:
+            print('До побачення')
+            break
+    elif user_choice == '5':
+        power(a, b)
         choice = input('Бажаєте продовжити? (y/n) ')
         if choice == 'y':
             continue
