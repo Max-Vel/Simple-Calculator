@@ -18,6 +18,10 @@ def paired_num(a, b):
 def odd_range(a, b):
     print([i for i in range(a, b+1) if i % 2 != 0])
 
+def sum_of_squares(a, b):
+    res = a ** 2 + b ** 2
+    print(f'Сума квадратів чисел {a} та {b} дорівнює {res}.')
+
 
 print(' КАЛЬКУЛЯТОР '.center(40, '*'))
 
@@ -73,6 +77,14 @@ while True:
     elif user_choice == '11':
         odd_range(a, b)
         choice = input('Бажаєте продовжити? (y/n) ')
+        if choice == 'y':
+            continue
+        else:
+            print('До побачення')
+            break
+    elif user_choice == '6':
+        sum_of_squares(a, b)
+        choice = input('Бажаєте продовжити? (y/n)')
         if choice == 'y':
             continue
         else:
