@@ -34,17 +34,17 @@ while True:
   10. Усі парні числа між числами {a} та {b}
   11. Усі непарні числа між числами {a} та {b}
     ''')
-    user_choice = input('> Ваш вибір: ')
+    user_choice = input('>>> Ваш вибір: ')
 
     if user_choice == '0':
         break
     elif user_choice == '4':
         division(a, b)
-        choice = input('Бажаєте продовжити? (y/n)')
+        choice = input('Бажаєте продовжити? (y/n) ')
         if choice == 'y':
             continue
         else:
-            print('Допобачення')
+            print('До побачення')
             break
     elif user_choice == '8':
         square_of_sum(a, b)
@@ -52,5 +52,5 @@ while True:
         if choice == 'y':
             continue
         else:
-            print('Допобачення')
+            print('До побачення')
             break
