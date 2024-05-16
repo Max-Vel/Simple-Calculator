@@ -16,7 +16,6 @@ print(' КАЛЬКУЛЯТОР '.center(40, '*'))
 while True:
     try:
         a, b = map(int, input('Введіть два числа через пропуск: ').split(' '))
-        #print(a, b, type(a), type(b))
     except:
         print('Не коректне введення.')
         continue
@@ -35,23 +34,23 @@ while True:
   10. Усі парні числа між числами {a} та {b}
   11. Усі непарні числа між числами {a} та {b}
     ''')
-    user_choice = input('> Ваш вибір: ')
+    user_choice = input('>>> Ваш вибір: ')
 
     if user_choice == '0':
         break
-    if user_choice == '4':
+    elif user_choice == '4':
         division(a, b)
-        choice = input('Бажаєте продовжити? (y/n)')
+        choice = input('Бажаєте продовжити? (y/n) ')
         if choice == 'y':
             continue
         else:
-            print('Допобачення')
+            print('До побачення')
             break
-    if user_choice == '8':
+    elif user_choice == '8':
         square_of_sum(a, b)
         choice = input('Бажаєте продовжити? (y/n) ')
         if choice == 'y':
             continue
         else:
-            print('Допобачення')
+            print('До побачення')
             break
