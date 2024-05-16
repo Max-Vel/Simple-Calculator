@@ -49,7 +49,7 @@ while True:
             break
     if user_choice == '8':
         square_of_sum(a, b)
-        choice = input('Бажаєте продовжити? (y/n)')
+        choice = input('Бажаєте продовжити? (y/n) ')
         if choice == 'y':
             continue
         else:
