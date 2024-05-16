@@ -6,6 +6,11 @@ def division(a, b):
     else:
         print(f'Результат ділення: {round(answer, 2)}')
 
+
+def square_of_sum(a, b):
+    print((a + b) ** 2)
+
+
 print(' КАЛЬКУЛЯТОР '.center(40, '*'))
 
 while True:
@@ -36,6 +41,14 @@ while True:
         break
     if user_choice == '4':
         division(a, b)
+        choice = input('Бажаєте продовжити? (y/n)')
+        if choice == 'y':
+            continue
+        else:
+            print('Допобачення')
+            break
+    if user_choice == '8':
+        square_of_sum(a, b)
         choice = input('Бажаєте продовжити? (y/n)')
         if choice == 'y':
             continue
