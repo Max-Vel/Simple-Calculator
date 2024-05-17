@@ -11,6 +11,10 @@ def square_of_sum(a, b):
     print((a + b) ** 2)
 
 
+def paired_num(a, b):
+    nums = [numb for numb in range(a, b+1) if numb % 2 == 0]
+    print(f'Парні числа: {nums}')
+
 def odd_range(a, b):
     print([i for i in range(a, b+1) if i % 2 != 0])
 
@@ -52,6 +56,14 @@ while True:
             break
     elif user_choice == '8':
         square_of_sum(a, b)
+        choice = input('Бажаєте продовжити? (y/n) ')
+        if choice == 'y':
+            continue
+        else:
+            print('До побачення')
+            break
+    elif user_choice == '10':
+        paired_num(a, b)
         choice = input('Бажаєте продовжити? (y/n) ')
         if choice == 'y':
             continue
